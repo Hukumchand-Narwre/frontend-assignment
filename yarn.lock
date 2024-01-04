@@ -213,6 +213,13 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@dschoon/react-waves@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@dschoon/react-waves/-/react-waves-3.0.3.tgz#d1ef3e13d83199799a415c009aa5c9873ae95495"
+  integrity sha512-bJHLU9gvIZjHdtUxWXMe53JqZFfIEF+lYrKU+FtY8+Maj/B9YMZ+2b+sLNttHH+Dhi5/M10bmkZi88iA5+qdlg==
+  dependencies:
+    wavesurfer.js "^3.3.3"
+
 "@esbuild/aix-ppc64@0.19.11":
   version "0.19.11"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.19.11.tgz#2acd20be6d4f0458bc8c784103495ff24f13b1d3"
@@ -2147,6 +2154,11 @@ vite@^5.0.8:
     rollup "^4.2.0"
   optionalDependencies:
     fsevents "~2.3.3"
+
+wavesurfer.js@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/wavesurfer.js/-/wavesurfer.js-3.3.3.tgz#9b16a62335c6bd13a3d55deb895a336d027ccb51"
+  integrity sha512-meko20S9in+V5xBLSVV/9uYVBSbx5AsJNkAslZ+a5yYIeFGYwcCo4Yd1sUpSGaiNnyflzrJwC7x7TdJFYrdT8w==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
