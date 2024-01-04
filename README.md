@@ -1,8 +1,32 @@
-# React + Vite
+# Created a Video Player using HTML5 Canvas in React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Task completed
 
-Currently, two official plugins are available:
+- Take a video file as input.
+- Display video metadata including duration on UI.
+- Display the video on the screen after the user has selected the file using the canvas element. Add a play/pause button in the middle of the video container and it must play/pause on clicking.
+- Display the waveform for the audio in a box below it, refer to the diagram.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ ## Tried but not completed
+- Detect the muted/no audio videos
+
+## Additional
+
+- visualized the audio frequency data in real time.
+
+## Done using
+
+- Displayed the video using canvas
+- For showing sinewave of audio used a library named @dschoon/react-waves
+- For doing additional tasks displaying real-time sinewave used a browser API AudioContext.
+
+## Demo URL
+
+  - https://vidyo-ai-assignment.netlify.app/
+
+## Demo video
+
+ 
+
+https://github.com/Hukumchand-Narwre/frontend-assignment/assets/85044429/9b9eeaa2-6c8d-4e47-ac25-9ab50e40576d
+
