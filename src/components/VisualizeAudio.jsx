@@ -5,18 +5,13 @@ const VisualizeAudio = ({ audioSource, isPlaying }) => {
   const audioRef = useRef(null);
 
   const initialTracks = {
-    tracks: [
-      { source: audioSource, title: "Zimt" },
-      { source: audioSource, title: "Ingwer" },
-    ],
+    tracks: [{ source: audioSource, title: "Zimt" }],
   };
-
-  const [track, setTrack] = useState(initialTracks.tracks[0]);
 
   return (
     <>
       <ReactWaves
-        audioFile={track.source}
+        audioFile={initialTracks.tracks[0].source}
         className={"react-waves"}
         options={{
           backend: "MediaElement",

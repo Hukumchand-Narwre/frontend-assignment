@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import VideoCanvasComponent from "./components/VideoCanvasComponent";
+import VideoCanvas from "./components/VideoCanvas";
 import "./App.css";
 
 function App() {
@@ -10,13 +10,13 @@ function App() {
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
 
-    console.log(file);
     setFileInformation({
       name: file.name,
       type: file.type,
       size: file.size,
       lastModifiedDate: new Date(file.lastModifiedDate).toLocaleDateString("en-GB"),
     });
+
     if (file) {
       const reader = new FileReader();
 
@@ -25,6 +25,7 @@ function App() {
         const videoUrl = URL.createObjectURL(videoBlob);
         setSelectedVideo(videoUrl);
       };
+
       reader.readAsArrayBuffer(file);
     }
   };
@@ -32,7 +33,11 @@ function App() {
   return (
     <div className="container">
       <input type="file" id="fileInput" className="custom-file-input" accept="video/*" onChange={handleFileUpload} />
-      {selectedVideo && <VideoCanvasComponent videoFile={selectedVideo} fileInfo={fileInformation} />}
+      {selectedVideo ? (
+        <VideoCanvas videoFile={selectedVideo} fileInfo={fileInformation} />
+      ) : (
+        <div>Please upload the video</div>
+      )}
     </div>
   );
 }
